@@ -1293,3 +1293,21 @@ body {
     gap: 2rem; }
     .services-about__logo-box img {
       width: 9.6rem; }
+
+.julie {
+  padding: 9.6rem; }
+  .julie__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem; }
+  .julie__grid-item {
+    min-height: 50rem; }
+    .julie__grid-item-1 {
+      background-image: url(https://res.cloudinary.com/luxuryp/images/w_1280,c_limit,f_auto,q_auto/ghtq7jtce7tsgdjtosrs/image-025);
+      background-position: center;
+      background-size: cover; }
+  .julie__text {
+    font-size: 1.6rem;
+    font-weight: 300;
+    letter-spacing: 1.5px;
+    line-height: 1.8; }
