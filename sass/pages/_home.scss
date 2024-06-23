@@ -92,16 +92,6 @@
         color: inherit;
       }
     }
-
-    &__icon-box {
-      display: flex;
-      gap: 2rem;
-      margin-top: auto;
-    }
-    &__icon {
-      height: 4.5rem;
-      width: 4.5rem;
-    }
   }
 }
 
@@ -239,12 +229,12 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
 
-    @include respond(phone) {
+    @include respond(tab-port) {
       grid-template-columns: 1fr;
     }
 
     &-item-1 {
-      @include respond(phone) {
+      @include respond(tab-port) {
         order: 1;
       }
     }

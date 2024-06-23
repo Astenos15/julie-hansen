@@ -26,8 +26,9 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin-bottom: 9.6rem;
+    gap: 2rem;
 
-    @include respond(tab-port) {
+    @include respond(tab-land) {
       grid-template-columns: repeat(2, 1fr);
     }
 
@@ -36,9 +37,7 @@
     }
 
     &-item {
-      padding: 2rem;
-
-      @include respond(tab-port) {
+      @include respond(tab-land) {
         &-1 {
           order: 1;
         }
@@ -85,7 +84,7 @@
 
     img {
       max-width: 100%;
-      min-height: 40rem;
+      min-height: 45rem;
       object-fit: cover;
       object-position: left;
     }
@@ -233,11 +232,20 @@
         }
       }
       &-2 {
+        min-height: 53rem;
+        background-image: url(https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/og3ockhby4gghmrdfseo/edited-p-19);
+        background-size: cover;
+        background-position: center;
+
         @include respond(tab-port) {
           order: 0;
         }
       }
       &-3 {
+        min-height: 53rem;
+        background-image: url(https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/ebvif7iqcx0lcjlvwyuz/edited-page-20);
+        background-size: cover;
+        background-position: center;
         @include respond(tab-port) {
           order: 2;
         }
@@ -256,28 +264,15 @@
         letter-spacing: 1.2px;
         line-height: 1.5;
       }
-
-      &-img {
-        overflow: hidden;
-        img {
-          height: 100%;
-          width: 100%;
-          object-fit: cover;
-        }
-      }
     }
   }
 
   &__logo-box {
     display: flex;
-    gap: 2rem;
+    gap: 4rem;
 
     img {
-      width: 9.6rem;
-
-      // @include respond(tab-land) {
-      //   width: 9.6rem;
-      // }
+      width: 15%;
     }
   }
 }
