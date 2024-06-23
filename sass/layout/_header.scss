@@ -1,0 +1,32 @@
+.header {
+  height: 95vh;
+  position: relative;
+  color: var(--color-text-light);
+  padding: 8rem;
+  display: flex;
+  align-items: center;
+  background: none !important;
+
+  @include respond(phone) {
+    padding: 2rem;
+  }
+
+  &__content-box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__text {
+    font-size: 1.4rem;
+    font-weight: 300;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    animation: backwards moveInBottom 1s ease 0.5s;
+  }
+
+  &__btn-box {
+    display: flex;
+    gap: 1rem;
+    animation: backwards moveInBottom 1s ease 1s;
+  }
+}

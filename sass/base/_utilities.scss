@@ -1,0 +1,43 @@
+.txt-center {
+  text-align: center;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+
+.mb-auto {
+  margin-bottom: auto;
+}
+.mr-auto {
+  margin-right: auto;
+}
+.mr-md {
+  margin-right: 4rem;
+}
+
+.mb-xs {
+  margin-bottom: 1rem;
+}
+.mb-sm {
+  margin-bottom: 2rem;
+}
+.mb-md {
+  margin-bottom: 4rem;
+}
+.mb-lg {
+  margin-bottom: 6rem;
+}
+.mb-hg {
+  margin-bottom: 9.6rem;
+}
+
+.hidden {
+  width: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.active {
+  opacity: 1 !important;
+  pointer-events: auto !important;
+}

@@ -1,0 +1,440 @@
+.section-features {
+  text-align: center;
+  background-color: var(--color-bg-dark);
+  color: var(--color-text-light);
+  padding: 9.6rem;
+
+  @include respond(phone) {
+    padding: 9.6rem 2rem;
+  }
+
+  .features {
+    &__grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 4rem;
+
+      @include respond(tab-port) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      @include respond(phone) {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    &__icon {
+      fill: var(--color-gold-light);
+      height: 4.5rem;
+      width: 4.5rem;
+    }
+
+    &__text {
+      font-size: 1.4rem;
+      font-weight: 300;
+      letter-spacing: 1.2px;
+      line-height: 1.8;
+    }
+  }
+}
+.section-team {
+  text-align: left;
+  padding: 9.6rem;
+  background-color: rgba(245, 242, 237, 1);
+
+  @include respond(tab-port) {
+    padding: 9.6rem 2rem;
+  }
+
+  .team {
+    &__grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 4rem;
+
+      @include respond(phone) {
+        grid-template-columns: 1fr;
+        padding-bottom: 8rem !important;
+      }
+    }
+
+    &__grid-item {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1.5rem;
+
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        filter: brightness(90%);
+      }
+    }
+
+    &__grid-text {
+      text-align: left;
+      font-size: 1.6rem;
+      font-weight: 200;
+      letter-spacing: 1.2px;
+      line-height: 1.5;
+
+      &-title {
+        font-weight: 400;
+        font-family: var(--heading-font);
+        text-transform: uppercase;
+        margin-right: 2rem;
+      }
+
+      a {
+        display: inline-block;
+        text-decoration: none;
+        color: inherit;
+      }
+    }
+
+    &__icon-box {
+      display: flex;
+      gap: 2rem;
+      margin-top: auto;
+    }
+    &__icon {
+      height: 4.5rem;
+      width: 4.5rem;
+    }
+  }
+}
+
+.section-communities {
+  text-align: center;
+
+  .communities {
+    &__grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+
+      @include respond(phone) {
+        grid-template-columns: 1fr;
+        padding-bottom: 0 !important;
+      }
+    }
+
+    &__card {
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      position: relative;
+
+      &-img {
+        &--1,
+        &--2,
+        &--3 {
+          @include respond(tab-port) {
+            min-height: 50rem;
+          }
+        }
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transform: scale(1.1);
+      }
+
+      &-title {
+        font-size: 6.4rem;
+        font-weight: 200;
+        letter-spacing: -7px;
+        color: var(--color-text-light);
+        text-transform: capitalize;
+
+        @include respond(tab-port) {
+          letter-spacing: -4px;
+        }
+      }
+
+      &-content {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(
+          to right,
+          rgba(#000, 0.1),
+          rgba(#000, 0.3)
+        );
+      }
+    }
+    &__full-txt {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      // background-color: rgba(245, 242, 237, 1);
+      min-height: 35rem;
+
+      @include respond(tab-port) {
+        min-height: 50rem;
+      }
+    }
+  }
+
+  .btn {
+    padding: 1.5rem 6rem;
+    font-size: 1.8rem;
+    font-weight: 400;
+  }
+}
+
+.section-listings {
+  padding: 9.6rem;
+
+  @include respond(tab-port) {
+    padding: 9.6rem 2rem;
+  }
+
+  &__contact {
+    &:link,
+    &:visited {
+      color: inherit;
+      display: inline-block;
+      font-size: 1.4rem;
+      text-decoration: none;
+      padding: 1rem;
+      border-bottom: 1px solid var(--color-black);
+      transition: all 0.4s;
+    }
+
+    &:hover {
+      transform: translateY(-4px);
+      background-color: var(--color-black);
+      color: var(--color-text-light);
+      box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.5);
+    }
+
+    &:active {
+      transform: translateY(0);
+      box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  &__text {
+    font-size: 1.6rem;
+    font-weight: 300;
+    letter-spacing: 1.2px;
+    line-height: 1.5;
+  }
+
+  &__address {
+    font-family: var(--heading-font);
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+
+    @include respond(phone) {
+      grid-template-columns: 1fr;
+    }
+
+    &-item-1 {
+      @include respond(phone) {
+        order: 1;
+      }
+    }
+
+    &-item-2 {
+      min-height: 50rem;
+      background-image: url("https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/ahkcyfaqpmeevenz6mwo/1");
+      background-position: center;
+      background-size: cover;
+      position: relative;
+
+      @include respond(phone) {
+        order: 0;
+      }
+    }
+  }
+
+  &__icon-box {
+    display: flex;
+    gap: 1rem;
+  }
+
+  &__icon {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+
+  &__video-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s ease;
+    z-index: 9999999;
+  }
+
+  &__video-popup {
+    position: fixed;
+    width: 80%;
+    @include absCenter;
+    transition: all 0.4s ease;
+
+    iframe {
+      width: 100%;
+      aspect-ratio: 16/9;
+    }
+  }
+
+  &__btn {
+    @include absCenter;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: 1px solid #fff;
+    outline-offset: 8px;
+    transition: all 0.4s;
+
+    &:hover {
+      background-color: #000;
+    }
+    &:hover > * {
+      fill: #fff;
+    }
+    &-icon {
+      display: block;
+      height: 3rem;
+      width: 3rem;
+    }
+  }
+}
+
+.section-services {
+  padding: 9.6rem 2rem;
+
+  @include respond(tab-port) {
+    padding: 9.6rem 2rem;
+  }
+  .services {
+    &__grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+
+      @include respond(tab-port) {
+        grid-template-columns: 1fr;
+      }
+
+      &-item {
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+      }
+
+      &-item:hover > .services__title {
+        top: 40%;
+      }
+      &-item-img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+        transition: all 0.5s;
+        filter: brightness(70%);
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+
+    &__title {
+      display: inline-block;
+      color: var(--color-text-light);
+      font-size: 2.4rem;
+      font-weight: 300;
+      letter-spacing: -1px;
+      text-transform: uppercase;
+      z-index: 1;
+      @include absCenter;
+      transition: all 0.2s;
+
+      @include respond(phone) {
+        font-size: 3.2rem;
+      }
+    }
+  }
+}
+
+.section-work {
+  min-height: 50rem;
+
+  @supports (background-attachment: fixed) or (background-size: cover) {
+    background: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.4)
+      ),
+      url(https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/skkve0aqzhkkyiytn92d/work-with-us)
+        no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  @supports (-webkit-touch-callout: none) {
+    /* CSS specific to iOS devices */
+    background: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.4)
+      ),
+      url(https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/skkve0aqzhkkyiytn92d/work-with-us)
+        no-repeat center;
+  }
+
+  //container
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-white);
+
+  .work {
+    &__content-box {
+      text-align: center;
+      max-width: 50%;
+
+      @include respond(phone) {
+        max-width: 80%;
+      }
+    }
+
+    &__heading {
+      font-size: 4.8rem;
+      font-weight: 400;
+      font-family: var(--heading-font);
+    }
+    &__text {
+      font-size: 1.8rem;
+      font-weight: 300;
+      letter-spacing: 1.5px;
+      line-height: 1.5;
+    }
+  }
+}
