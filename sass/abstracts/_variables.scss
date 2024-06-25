@@ -1,16 +1,17 @@
 :root {
-  --heading-font: "Playfair Display", serif;
-  --body-font: "Inter", sans-serif;
+  --color-primary-dark: #121920;
+  --color-primary-light: #2c3e50;
 
-  //COLORS
-  --color-bg-dark: #101d2c;
   --color-gold-light: #c69963;
   --color-gold-dark: #b28451;
-  --color-black: #000;
-  --color-white: #fff;
 
-  //TEXT-COLORS
-  --color-text-light: #eee;
-  --color-text-dark: #333;
-  --color-text-grey: #aaa;
+  --color-text-light: #eaecee;
+  --color-text-dark: #040608;
+
+  --shadow-dark: 0 1rem 4rem rgba(0, 0, 0, 0.2);
+  --shadow-light: 0 1rem 4rem rgba(0, 0, 0, 0.1);
+
+  --heading-font: "Playfair Display", serif;
+  --display-font: "Josefin Sans", sans-serif;
+  --text-font: "Work Sans", sans-serif;
 }

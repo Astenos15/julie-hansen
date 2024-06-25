@@ -1,115 +1,59 @@
 .btn {
-  &:link,
-  &:visited {
-    display: inline-block;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 1.4rem;
-    color: var(--color-text-light);
-    transition: all 0.2s;
-  }
+  display: inline-block;
+  padding: 1.5rem 4rem;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.2s;
 
   &-outline {
-    padding: 1.5rem 4rem;
-    border: none;
-    outline: 1px solid var(--color-text-light);
-    background-image: linear-gradient(
-      120deg,
-      transparent 0%,
-      transparent 50%,
-      var(--color-black) 50%
-    );
-    background-size: 220%;
+    &:link,
+    &:visited {
+      border: 1px solid var(--color-text-light);
+      background: linear-gradient(
+        120deg,
+        transparent 0%,
+        transparent 50%,
+        var(--color-primary-dark) 50%
+      );
+      background-size: 220%;
+    }
 
     &:hover {
       transform: translateY(-4px);
       background-position: 100%;
-      outline: 1px solid var(--color-black);
-      box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.5);
+      border: 1px solid var(--color-primary-dark);
+      box-shadow: var(--shadow-dark);
     }
 
     &:active {
       transform: translateY(0);
-      box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.1);
+      box-shadow: var(--shadow-light);
     }
   }
 
   &-full {
-    padding: 1.5rem 4rem;
-    border: none;
-    color: var(--color-text-light);
-    background-color: var(--color-black);
-    outline: 1px solid var(--color-black);
+    &:link,
+    &:visited {
+      background-color: var(--color-primary-dark);
+      border: 1px solid var(--color-primary-dark);
+      color: (--color-text-light);
+    }
 
     &:hover {
       transform: translateY(-4px);
-      box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.5);
+      box-shadow: var(--shadow-dark);
     }
 
     &:active {
       transform: translateY(0);
-      box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.1);
+      box-shadow: var(--shadow-light);
     }
   }
 
-  &-outline:hover + .btn-full {
-    outline: 1px solid var(--color-text-light);
+  &:hover + &-full {
     background-color: transparent;
-  }
-}
-
-// Button for CTA
-.btn-cta {
-  border: none;
-  background: none;
-  background-image: linear-gradient(
-    120deg,
-    transparent 0%,
-    transparent 50%,
-    var(--color-white) 50%
-  );
-  background-size: 220%;
-  color: inherit;
-  font-size: 1.8rem;
-  text-transform: uppercase;
-  font-weight: 300;
-  letter-spacing: 1.2px;
-  outline: 1px solid var(--color-white);
-  padding: 1.5rem 4rem;
-  cursor: pointer;
-  transition: all 0.2s;
-
-  &:hover {
-    transform: translateY(-4px);
-    background-position: 100%;
-    color: var(--color-text-dark);
-    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.5);
-  }
-  &:active {
-    transform: translateY(0);
-    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.1);
-  }
-}
-
-// Button for Form
-
-.btn-form {
-  border: none;
-  background: none;
-  background-color: var(--color-black);
-  color: var(--color-text-light);
-  padding: 1.5rem 4rem;
-  text-transform: uppercase;
-  cursor: pointer;
-  transition: all 0.2s;
-
-  &:hover {
-    transform: translateY(-4px);
-    background-position: 100%;
-    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.5);
-  }
-  &:active {
-    transform: translateY(0);
-    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--color-text-light);
   }
 }
