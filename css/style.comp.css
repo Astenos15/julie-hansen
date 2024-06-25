@@ -350,7 +350,7 @@ body {
     background-color: var(--color-text-dark);
     border-radius: 50%;
     box-shadow: var(--shadow-dark);
-    z-index: 9999999; }
+    z-index: 999999; }
   .navigation__toggle:hover .navigation__icon:before {
     top: -1rem; }
   .navigation__toggle:hover .navigation__icon:after {

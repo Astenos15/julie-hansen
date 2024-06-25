@@ -1,16 +1,3 @@
-//POPUP
-const openBtn = document.querySelector(".popup-open");
-const closeBtn = document.querySelector(".popup__close-btn");
-const popup = document.querySelector(".popup");
-
-openBtn.addEventListener("click", function () {
-  popup.classList.remove("hidden");
-});
-
-closeBtn.addEventListener("click", function () {
-  popup.classList.add("hidden");
-});
-
 //NAV
 const navBtn = document.querySelector(".navigation__toggle");
 const navigation = document.querySelector(".navigation");
@@ -25,3 +12,18 @@ for (let i = 0; i < navLinks.length; i++) {
     navigation.classList.add("hidden");
   });
 }
+
+//POPUP
+const openBtn = document.querySelector(".popup-open");
+const closeBtn = document.querySelector(".popup__close-btn");
+const popup = document.querySelector(".popup");
+
+openBtn.addEventListener("click", function () {
+  popup.classList.remove("hidden");
+  navBtn.classList.add("hidden");
+});
+
+closeBtn.addEventListener("click", function () {
+  popup.classList.add("hidden");
+  navBtn.classList.remove("hidden");
+});
