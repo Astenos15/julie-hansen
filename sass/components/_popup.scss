@@ -1,0 +1,77 @@
+.popup {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 9999;
+  color: var(--color-text-dark);
+  overflow-y: scroll; /* Must be 'scroll' not 'auto' */
+  -webkit-overflow-scrolling: touch;
+
+  &__content {
+    background-color: #fff;
+    padding: 4rem;
+    width: 50%;
+    margin: 0 auto;
+    position: relative;
+
+    @include respond(phone) {
+      width: 100%;
+      padding: 4rem 2rem;
+    }
+  }
+
+  &__icon {
+    fill: #000;
+    height: 3rem;
+    width: 3rem;
+  }
+  &__close-btn {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    height: 6rem;
+    width: 6rem;
+    background: none;
+    border: none;
+    border-radius: 50%;
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+
+    input {
+      width: 100%;
+      padding: 1rem 2rem;
+      font-size: 1.6rem;
+      border: none;
+      background: none;
+      border-bottom: 3px solid var(--color-text-dark);
+      outline: none;
+
+      &:focus {
+        border-bottom: 3px solid green;
+      }
+      &:focus:invalid {
+        border-bottom: 3px solid orangered;
+      }
+    }
+
+    .btn {
+      margin-top: 3.2rem;
+      border: none;
+      background: none;
+      background-color: var(--color-text-dark);
+      color: var(--color-text-light);
+    }
+  }
+}

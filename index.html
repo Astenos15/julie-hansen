@@ -8,6 +8,39 @@
     <title>Julie Hansen Partnership | Pleasanton & Livermore Real Estate</title>
   </head>
   <body>
+    <div for="nav" class="navigation__toggle">
+      <div class="navigation__icon">&nbsp;</div>
+    </div>
+
+   
+    <div class="navigation hidden">
+      <div class="navigation__bg">&nbsp;</div>
+      <nav class="nav nav-active">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="index.html" class="nav__link">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="#features" class="nav__link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="#communities" class="nav__link">Communities</a>
+          </li>
+          <li class="nav__item">
+            <a href="#listings" class="nav__link">Listings</a>
+          </li>
+          <li class="nav__item">
+            <a href="#services" class="nav__link">Services</a>
+          </li>
+          <li class="nav__item">
+            <a href="#testimonials" class="nav__link">Testimonials</a>
+          </li>
+          <li class="nav__item">
+            <a href="#work" class="nav__link">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
     <header class="header container">
       <div class="bg-video">
         <video class="bg-video__content" autoplay muted loop>
@@ -25,12 +58,12 @@
       <h1 class="heading-primary mb-sm">Julie Hansen Partnership</h1>
       <p class="heading-text mb-md">Julie Hansen-Orvis | CA DRE# 00934447</p>
       <div class="header__btn-box">
-        <a href="#" class="btn btn-outline">Search for Homes</a>
-        <a href="#" class="btn btn-full">Meet the Team</a>
+        <a href="#listings" class="btn btn-outline">Search for Homes</a>
+        <a href="#team" class="btn btn-full">Meet the Team</a>
       </div>
     </header>
     <main>
-      <section class="features container">
+      <section id="features" class="features container">
         <div class="features__grid grid-4-cols">
           <div class="features__grid-item">
             <svg class="features__icon mb-sm">
@@ -79,7 +112,7 @@
         </div>
       </section>
 
-      <section class="team container">
+      <section id="team" class="team container">
         <div class="team__grid grid-2-cols">
           <div class="team__grid-item team__grid-item-img">&nbsp;</div>
           <div class="team__grid-item team__grid-item-content">
@@ -101,7 +134,7 @@
         </div>
       </section>
 
-      <section class="communities">
+      <section id="communities" class="communities">
         <div class="communities__grid-item communities__grid-item-1">
           <h4 class="heading-subheading-sub">
             Learn more about your desired area
@@ -136,7 +169,7 @@
           to see. If you are considering relocating, give us a call and we can
           connect you with one of our top-notch local market experts.
         </p>
-        <a href="#listings" class="btn btn-full popbtn mb-lg">Contact us</a>
+        <a href="#work" class="btn btn-full popbtn mb-lg">Contact us</a>
         <div class="listings__grid grid-2-cols">
           <div class="listings__grid-item listings__grid-item-text">
             <h2 class="heading-secondary mb-sm">Luxury in Franklin Lakes</h2>
@@ -196,7 +229,7 @@
         </div>
       </section>
 
-      <section class="services container">
+      <section id="services" class="services container">
         <div class="services__grid grid-2-cols">
           <div class="box">
             <div class="services__grid-item services__grid-item-1">
@@ -213,7 +246,7 @@
         </div>
       </section>
 
-      <section class="testimonials container">
+      <section id="testimonials" class="testimonials container">
         <div class="testimonials__grid grid-2-cols">
           <div class="testimonials__grid-item">
             <div class="testimonials__img-box">
@@ -292,15 +325,35 @@
         </div>
       </section>
 
-      <section class="work">
+      <section id="work" class="work">
         <h2 class="heading-secondary mb-sm">Work With Us</h2>
         <p class="text mb-md">
           With decades of experience in luxurious Tri Valley real estate, our
           team is here to ensure that your dreams are a reality. Let us guide
           you through your home buying journey, contact us today!
         </p>
-        <a href="#" class="btn btn-outline">Contact Us</a>
+        <button class="popup-open">Contact Us</button>
       </section>
+      <div class="popup container hidden">
+          <div class="popup__content">
+            <button class="popup__close-btn">
+              <svg class="popup__icon">
+                <use xlink:href="img/sprite.svg#icon-cross"></use>
+              </svg>
+            </button>
+            <h2 class="heading-secondary mb-sm">Get in touch</h2>
+            <form action="#" class="popup__form mb-sm">
+              <input type="text" placeholder="Full Name" required />
+              <input type="text" placeholder="Tel/Mobile No." />
+              <input type="emal" placeholder="Email Adress" required />
+              <button class="btn">Submit</button>
+            </form>
+            <p class="text">
+              By providing Julie Hansen Partnership your contact information, you acknowledge and agree to our Privacy Policy and consent to receiving marketing communications, including through automated calls, texts, and emails, some of which may use artificial or prerecorded voices. This consent isn’t necessary for purchasing any products or services and you may opt out at any time. To opt out from texts, you can reply, ‘stop’ at any time. To opt out from emails, you can click on the unsubscribe link in the emails. Message and data rates may apply.
+            </p>
+          </div>
+        </div>
+      </div>
     </main>
     <footer class="footer container">
       <div class="footer__grid grid-4-cols">
