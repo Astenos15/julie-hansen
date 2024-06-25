@@ -5,7 +5,7 @@
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.9);
-  z-index: 9999;
+  z-index: 99999999;
   color: var(--color-text-dark);
   overflow-y: scroll; /* Must be 'scroll' not 'auto' */
   -webkit-overflow-scrolling: touch;
