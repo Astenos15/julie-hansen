@@ -13,10 +13,6 @@
       display: grid;
       grid-template-columns: min-content 1fr;
       gap: 1.5rem;
-      @include respond(phone) {
-        width: 70%;
-        margin: 0 auto;
-      }
     }
   }
 
@@ -79,6 +75,9 @@
 
       .heading-secondary {
         font-size: 6.2rem;
+        @include respond(phone) {
+          font-size: 5.2rem;
+        }
       }
     }
     &-2 {
@@ -425,6 +424,9 @@
 
   .text {
     width: 60%;
+    @include respond(phone) {
+      width: 90%;
+    }
   }
 
   .btn {

@@ -229,6 +229,9 @@ body {
   @media only screen and (max-width: 56.25em) {
     .container {
       padding: 9.6rem 4rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .container {
+      padding: 9.6rem 2rem; } }
 
 .grid-2-cols {
   display: grid;
@@ -278,10 +281,6 @@ body {
     display: grid;
     grid-template-columns: min-content 1fr;
     gap: 1.5rem; }
-    @media only screen and (max-width: 37.5em) {
-      .features__grid-item {
-        width: 70%;
-        margin: 0 auto; } }
   .features__content {
     padding: 0.5rem 0; }
   .features__icon {
@@ -321,6 +320,9 @@ body {
       background-image: linear-gradient(120deg, #f7f7f7 0%, #f7f7f7 50%, #f5f2ed 50%); }
       .communities__grid-item-1 .heading-secondary {
         font-size: 6.2rem; }
+        @media only screen and (max-width: 37.5em) {
+          .communities__grid-item-1 .heading-secondary {
+            font-size: 5.2rem; } }
     .communities__grid-item-2 {
       background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url(https://images.pexels.com/photos/12579667/pexels-photo-12579667.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
       background-position: center;
@@ -541,6 +543,9 @@ body {
   text-align: center; }
   .work .text {
     width: 60%; }
+    @media only screen and (max-width: 37.5em) {
+      .work .text {
+        width: 90%; } }
   .work .btn:link, .work .btn:visited {
     border: 1px solid var(--color-text-light);
     background: linear-gradient(120deg, transparent 0%, transparent 50%, var(--color-text-light) 50%);

@@ -4,4 +4,7 @@
   @include respond(tab-port) {
     padding: 9.6rem 4rem;
   }
+  @include respond(tab-port) {
+    padding: 9.6rem 2rem;
+  }
 }
