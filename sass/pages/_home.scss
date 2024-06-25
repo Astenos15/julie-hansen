@@ -159,6 +159,13 @@
 }
 
 .listings {
+  @include respond(phone) {
+    h2 {
+      font-size: 3.2rem;
+      letter-spacing: -2.9px;
+    }
+  }
+
   &__address {
     font-size: 2.4rem;
     font-family: var(--display-font);
