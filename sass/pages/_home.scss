@@ -423,6 +423,20 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+
+  @supports (-webkit-touch-callout: none) {
+    background: linear-gradient(
+        to bottom right,
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.3)
+      ),
+      url(https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/skkve0aqzhkkyiytn92d/work-with-us);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 100vh;
+  }
+
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -64,3 +64,43 @@
     content: "";
   }
 }
+
+@keyframes alternateText2 {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  30% {
+    opacity: 1;
+    transform: translateY(0);
+    content: "Building sales. managing relationships.";
+  }
+  35% {
+    opacity: 0;
+    transform: translateY(-20px);
+    content: "";
+  }
+
+  60% {
+    opacity: 1;
+    transform: translateY(0);
+    content: "Professional, capable and caring";
+  }
+
+  65% {
+    opacity: 0;
+    transform: translateY(-20px);
+    content: "";
+  }
+
+  90% {
+    opacity: 1;
+    transform: translateY(0);
+    content: "Helping Buyers and Sellers for over 30 years";
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-20px);
+    content: "";
+  }
+}

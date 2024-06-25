@@ -76,6 +76,35 @@ ORDER: Base + typography > general layout + grid > page layout > components
     transform: translateY(-20px);
     content: ""; } }
 
+@keyframes alternateText2 {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px); }
+  30% {
+    opacity: 1;
+    transform: translateY(0);
+    content: "Building sales. managing relationships."; }
+  35% {
+    opacity: 0;
+    transform: translateY(-20px);
+    content: ""; }
+  60% {
+    opacity: 1;
+    transform: translateY(0);
+    content: "Professional, capable and caring"; }
+  65% {
+    opacity: 0;
+    transform: translateY(-20px);
+    content: ""; }
+  90% {
+    opacity: 1;
+    transform: translateY(0);
+    content: "Helping Buyers and Sellers for over 30 years"; }
+  100% {
+    opacity: 0;
+    transform: translateY(-20px);
+    content: ""; } }
+
 *,
 *::before,
 *::after {
@@ -124,6 +153,9 @@ body {
     left: 0;
     content: "";
     animation: alternateText 15s ease 0.1s infinite; }
+    @media only screen and (max-width: 37.5em) {
+      .heading-subheading-main::after {
+        animation: alternateText2 15s ease 0.1s infinite; } }
 
 .heading-subheading-sub {
   font-size: 2.4rem;
@@ -279,7 +311,7 @@ body {
         align-items: flex-start; } }
   @media only screen and (max-width: 37.5em) {
     .header .btn {
-      width: 55%;
+      width: 60%;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -563,6 +595,12 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center; }
+  @supports (-webkit-touch-callout: none) {
+    .work {
+      background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/skkve0aqzhkkyiytn92d/work-with-us);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      min-height: 100vh; } }
   .work .text {
     width: 60%; }
     @media only screen and (max-width: 37.5em) {

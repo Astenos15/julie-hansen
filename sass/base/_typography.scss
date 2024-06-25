@@ -31,6 +31,10 @@ body {
       left: 0;
       content: "";
       animation: alternateText 15s ease 0.1s infinite;
+
+      @include respond(phone) {
+        animation: alternateText2 15s ease 0.1s infinite;
+      }
     }
   }
 
