@@ -99,7 +99,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   90% {
     opacity: 1;
     transform: translateY(0);
-    content: "Helping Buyers and Sellers for over 30 years"; }
+    content: "30+ Years Serving HomeBuyers and Sellers"; }
   100% {
     opacity: 0;
     transform: translateY(-20px);
