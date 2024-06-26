@@ -2,6 +2,11 @@
   @media only screen and(max-width:73.13em) {
     padding: 9.6rem 4rem;
   }
+
+  @include respond(phone) {
+    padding: 9.6rem 1rem;
+  }
+
   &__grid {
     @include respond(tab-land) {
       column-gap: 2rem;

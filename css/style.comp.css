@@ -878,6 +878,10 @@ body {
   .team-page {
     padding: 9.6rem 4rem; } }
 
+@media only screen and (max-width: 37.5em) {
+  .team-page {
+    padding: 9.6rem 1rem; } }
+
 @media only screen and (max-width: 75em) {
   .team-page__grid {
     column-gap: 2rem; } }
