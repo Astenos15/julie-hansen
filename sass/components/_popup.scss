@@ -18,9 +18,13 @@
     position: relative;
     z-index: 99999;
 
+    @include respond(tab-land) {
+      width: 80%;
+      padding: 4rem;
+    }
+
     @include respond(phone) {
       width: 100%;
-      padding: 4rem 2rem;
     }
   }
 
