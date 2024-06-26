@@ -1,8 +1,7 @@
 .team-page {
-  @media only screen and(max-width:73.13em) {
-    padding: 9.6rem 4rem;
+  @include respond(tab-land) {
+    padding: 9.6rem 2rem;
   }
-
   @include respond(phone) {
     padding: 9.6rem 1rem;
   }
