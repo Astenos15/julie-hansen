@@ -1,0 +1,63 @@
+.team-page {
+  @media only screen and(max-width:73.13em) {
+    padding: 9.6rem 4rem;
+  }
+  &__grid {
+    @include respond(tab-land) {
+      column-gap: 2rem;
+    }
+
+    @media only screen and(max-width:73.13em) {
+      grid-template-columns: 1fr;
+    }
+
+    @include respond(tab-port) {
+      grid-template-columns: 1fr;
+      row-gap: 2rem;
+    }
+    &-item {
+      padding: 2rem;
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+
+      border: 2px solid black;
+
+      // &:not(:last-child) {
+      //   border-right: 2px solid black;
+      // }
+    }
+  }
+
+  &__icon-box {
+    display: flex;
+    gap: 2rem;
+
+    &-1 {
+      @media only screen and(max-width:73.13em) {
+        display: none;
+      }
+    }
+
+    &-2 {
+      display: none;
+
+      @media only screen and(max-width:73.13em) {
+        display: inline-block;
+      }
+    }
+  }
+
+  &__icon {
+    height: 4.5rem;
+    width: 4.5rem;
+  }
+  .text-1 {
+    @media only screen and(max-width:73.13em) {
+      margin-bottom: 0;
+    }
+  }
+}

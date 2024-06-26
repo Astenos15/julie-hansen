@@ -172,7 +172,7 @@ body {
   letter-spacing: -0.9rem; }
   @media only screen and (max-width: 37.5em) {
     .heading-primary {
-      font-size: 7.4rem; } }
+      font-size: 9rem; } }
 
 .heading-secondary {
   font-size: 4.8rem;
@@ -189,7 +189,7 @@ body {
   font-size: 2.4rem; }
   @media only screen and (max-width: 37.5em) {
     .heading-text {
-      font-size: 1.8rem; } }
+      font-size: 2rem; } }
 
 .text {
   font-size: 1.6rem;
@@ -281,10 +281,13 @@ body {
     margin: 0 auto;
     position: relative;
     z-index: 99999; }
+    @media only screen and (max-width: 75em) {
+      .popup__content {
+        width: 80%;
+        padding: 4rem; } }
     @media only screen and (max-width: 37.5em) {
       .popup__content {
-        width: 100%;
-        padding: 4rem 2rem; } }
+        width: 100%; } }
   .popup__icon {
     fill: #000;
     height: 3rem;
@@ -418,7 +421,7 @@ body {
   @media only screen and (max-width: 56.25em) {
     .container {
       padding: 9.6rem 4rem; } }
-  @media only screen and (max-width: 56.25em) {
+  @media only screen and (max-width: 37.5em) {
     .container {
       padding: 9.6rem 2rem; } }
 
@@ -870,3 +873,49 @@ body {
       box-shadow: var(--shadow-light); }
   .work .heading-secondary {
     font-family: var(--heading-font); }
+
+@media only screen and (max-width: 73.13em) {
+  .team-page {
+    padding: 9.6rem 4rem; } }
+
+@media only screen and (max-width: 75em) {
+  .team-page__grid {
+    column-gap: 2rem; } }
+
+@media only screen and (max-width: 73.13em) {
+  .team-page__grid {
+    grid-template-columns: 1fr; } }
+
+@media only screen and (max-width: 56.25em) {
+  .team-page__grid {
+    grid-template-columns: 1fr;
+    row-gap: 2rem; } }
+
+.team-page__grid-item {
+  padding: 2rem;
+  border: 2px solid black; }
+  .team-page__grid-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center; }
+
+.team-page__icon-box {
+  display: flex;
+  gap: 2rem; }
+  @media only screen and (max-width: 73.13em) {
+    .team-page__icon-box-1 {
+      display: none; } }
+  .team-page__icon-box-2 {
+    display: none; }
+    @media only screen and (max-width: 73.13em) {
+      .team-page__icon-box-2 {
+        display: inline-block; } }
+
+.team-page__icon {
+  height: 4.5rem;
+  width: 4.5rem; }
+
+@media only screen and (max-width: 73.13em) {
+  .team-page .text-1 {
+    margin-bottom: 0; } }
