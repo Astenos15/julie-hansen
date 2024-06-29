@@ -31,4 +31,11 @@
   justify-content: center;
   padding: 9.6rem;
   color: var(--color-text-light);
+  @include respond(phone) {
+    .heading-primary {
+      font-size: 6rem;
+      letter-spacing: -6px;
+    }
+    padding: 2rem;
+  }
 }
