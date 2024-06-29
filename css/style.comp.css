@@ -1072,7 +1072,7 @@ body {
   color: var(--color-text-light); }
   @media only screen and (max-width: 37.5em) {
     .services-page--2 {
-      padding: 0 2rem 9.6rem 2rem; } }
+      padding: 9.6rem 2rem; } }
   .services-page--2 .heading-tertiary {
     color: var(--color-gold-light); }
   @media only screen and (max-width: 37.5em) {
@@ -1126,13 +1126,17 @@ body {
       padding: 4rem; }
       @media only screen and (max-width: 37.5em) {
         .services-page--4__grid-item--1 {
-          order: 1; }
+          order: 1;
+          padding: 0; }
         .services-page--4__grid-item--2 {
-          order: 2; }
+          order: 2;
+          padding: 2rem; }
         .services-page--4__grid-item--3 {
-          order: 4; }
+          order: 4;
+          padding: 0; }
         .services-page--4__grid-item--4 {
-          order: 3; } }
+          order: 3;
+          padding: 2rem; } }
       .services-page--4__grid-item img {
         height: 60rem;
         width: 100%;
