@@ -14,14 +14,16 @@ for (let i = 0; i < navLinks.length; i++) {
 }
 
 //POPUP
-const openBtn = document.querySelector(".popup-open");
+const openBtn = document.querySelectorAll(".popup-open");
 const closeBtn = document.querySelector(".popup__close-btn");
 const popup = document.querySelector(".popup");
 
-openBtn.addEventListener("click", function () {
-  popup.classList.remove("hidden");
-  navBtn.classList.add("hidden");
-});
+for (let i = 0; i < openBtn.length; i++) {
+  openBtn[i].addEventListener("click", function () {
+    popup.classList.remove("hidden");
+    navBtn.classList.add("hidden");
+  });
+}
 
 closeBtn.addEventListener("click", function () {
   popup.classList.add("hidden");

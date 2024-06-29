@@ -1,0 +1,78 @@
+.card {
+  box-shadow: var(--shadow-light);
+  position: relative;
+  &__img {
+    overflow: hidden;
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      transition: all 0.2s;
+      transform: scale(1.15);
+      cursor: pointer;
+      filter: brightness(90%);
+
+      &:hover {
+        transform: scale(1.4);
+      }
+    }
+  }
+
+  &__btn-box {
+    &::before {
+      display: inline-block;
+      content: "Active";
+      color: var(--color-text-light);
+      font-size: 2rem;
+      padding: 0.5rem 1rem;
+      border: 1px solid var(--color-text-light);
+      position: absolute;
+      z-index: 1000;
+      top: 2%;
+      left: 2%;
+    }
+  }
+
+  &__btn {
+    border: none;
+    background: none;
+    cursor: pointer;
+    position: absolute;
+    z-index: 1000;
+    top: 2%;
+    right: 2%;
+  }
+
+  &__btn-icon {
+    height: 4rem;
+    width: 4rem;
+    fill: transparent;
+    stroke: var(--color-text-light);
+  }
+
+  &__content {
+    padding: 2rem;
+  }
+
+  &__list {
+    display: flex;
+    gap: 2rem;
+
+    &-item {
+      &:first-child {
+        list-style: none;
+      }
+    }
+  }
+
+  &__reg {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    img {
+      height: 4rem;
+      width: 4rem;
+    }
+  }
+}
