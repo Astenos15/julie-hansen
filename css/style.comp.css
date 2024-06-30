@@ -727,6 +727,9 @@ body {
   .video__box iframe {
     width: 100%;
     aspect-ratio: 16/9; }
+  @media only screen and (max-width: 37.5em) {
+    .video__box {
+      top: 30%; } }
 
 @media only screen and (max-width: 37.5em) {
   .listings h2 {
