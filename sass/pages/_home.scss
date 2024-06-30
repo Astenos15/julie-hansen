@@ -158,6 +158,25 @@
   }
 }
 
+.video__overlay {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 99999;
+}
+.video__box {
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  iframe {
+    width: 100%;
+    aspect-ratio: 16/9;
+  }
+}
+
 .listings {
   @include respond(phone) {
     h2 {

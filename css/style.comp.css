@@ -711,6 +711,23 @@ body {
     transform: translateY(0);
     box-shadow: var(--shadow-light); }
 
+.video__overlay {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 99999; }
+
+.video__box {
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%; }
+  .video__box iframe {
+    width: 100%;
+    aspect-ratio: 16/9; }
+
 @media only screen and (max-width: 37.5em) {
   .listings h2 {
     font-size: 3.2rem;

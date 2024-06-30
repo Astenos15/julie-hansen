@@ -29,3 +29,20 @@ closeBtn.addEventListener("click", function () {
   popup.classList.add("hidden");
   navBtn.classList.remove("hidden");
 });
+
+//Video
+const playBtn = document.querySelector(".vid-btn");
+const videoOver = document.querySelector(".video__overlay");
+const video = document.querySelector(".video");
+
+playBtn.addEventListener("click", function () {
+  videoOver.classList.remove("hidden");
+  video.src =
+    "https://player.vimeo.com/video/434213215?h=f689b5d773&title=0&byline=0&portrait=0&autoplay=1";
+});
+
+videoOver.addEventListener("click", function () {
+  videoOver.classList.add("hidden");
+  video.src =
+    "https://player.vimeo.com/video/434213215?h=f689b5d773&title=0&byline=0&portrait=0&autoplay=0";
+});
