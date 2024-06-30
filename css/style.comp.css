@@ -461,6 +461,7 @@ body {
     display: inline-block;
     padding: 1rem 4rem;
     font-size: 2.4rem;
+    font-family: var(--display-font);
     text-decoration: none;
     text-transform: uppercase;
     background-image: linear-gradient(120deg, transparent 0%, transparent 50%, var(--color-text-dark) 50%);
@@ -1161,6 +1162,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center; }
+  @supports (-webkit-touch-callout: none) {
+    .home-valuation {
+      background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/gtbkdwxxsuw9dbswaomt/modern-marble-kitchen);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      min-height: 100vh; } }
   @media only screen and (max-width: 37.5em) {
     .home-valuation h1 {
       font-size: 6.4rem; } }
@@ -1183,6 +1190,8 @@ body {
       border-bottom: 3px solid var(--color-text-dark); }
       .home-valuation form input:focus {
         border-bottom: 3px solid green; }
+      .home-valuation form input:focus:invalid {
+        border-bottom: 3px solid orangered; }
   .home-valuation .btn-form {
     border: none;
     background: none;
