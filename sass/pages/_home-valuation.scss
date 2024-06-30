@@ -48,6 +48,10 @@
       &:focus {
         border-bottom: 3px solid green;
       }
+
+      &:focus:invalid {
+        border-bottom: 3px solid orangered;
+      }
     }
   }
 
