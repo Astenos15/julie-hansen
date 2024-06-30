@@ -16,11 +16,6 @@
   }
 
   @include respond(phone) {
-    h2 {
-      font-size: 3.4rem;
-      letter-spacing: -3.4px;
-    }
-
     background: linear-gradient(
       130deg,
       rgba(245, 242, 237, 1) 0%,
@@ -77,7 +72,10 @@
   &__grid {
     gap: 0;
     &-item {
-      align-content: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
       min-height: 60rem;
 
       @include respond(phone) {
@@ -132,6 +130,10 @@
   &__grid {
     gap: 0;
     &-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
       padding: 4rem;
 
       @include respond(phone) {
@@ -145,17 +147,18 @@
         }
         &--3 {
           order: 4;
-          padding: 0;
+          padding: 2rem;
         }
         &--4 {
           order: 3;
-          padding: 2rem;
+          padding: 0;
         }
       }
       img {
         height: 60rem;
         width: 100%;
         object-fit: cover;
+        margin-bottom: 2.4rem;
       }
     }
   }
